@@ -1,0 +1,24 @@
+{
+  "name": "ie-sucks",
+  "version": "0.0.0",
+  "description": "add js functions that ie is missing",
+  "main": "ie-sucks.js",
+  "dependencies": {},
+  "devDependencies": {
+    "optimist": "~0.3.5",
+    "uglify-js": "~1.3.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:regality/ie-sucks.git"
+  },
+  "keywords": [
+    "ie",
+    "sucks"
+  ],
+  "author": "Adam Blackburn",
+  "license": "MIT"
+}
