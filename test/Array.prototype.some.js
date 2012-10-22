@@ -1,8 +1,8 @@
 var assert = require('assert');
 
-require('../lib/Array.some')
+require('../lib/Array.prototype.some')
 
-describe('Array.some', function() {
+describe('Array.prototype.some', function() {
   it('should test some elements', function() {
     var arr = [1,2,3];
     var ok = arr.some(function(v) {

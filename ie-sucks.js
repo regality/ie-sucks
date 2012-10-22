@@ -9,7 +9,7 @@ Array.prototype.every = function(fn, context) {
   }
 
   for (var i = 0, l = this.length; i < l; i++) {
-    if (i in t && !fn.call(context, this[i], i, this)) {
+    if (this.hasOwnProperty(i) && !fn.call(context, this[i], i, this)) {
       return false;
     }
   }
@@ -32,7 +32,7 @@ Array.prototype.filter = function(fn, context) {
   for (var i = 0, l = this.length; i < l; ++i) {
     if (this.hasOwnProperty(i)) {
       if (fn.call(context, this[i], i, this)) {
-        res.push(val);
+        res.push(this[i]);
       }
     }
   }
@@ -130,7 +130,7 @@ Array.prototype.reduceRight = function reduce(fn, previous) {
     throw new TypeError(fn + " is not a function");
   }
 
-  for (var i = this.length - 1; i >= 0; ++i) {
+  for (var i = this.length - 1; i >= 0; --i) {
     if (this.hasOwnProperty(i)) {
       previous = fn.call(this, previous, this[i], i, this);
     }
@@ -188,7 +188,7 @@ Function.prototype.bind = function () {
 }
 }
 
-if (!Object.prototype.create) {
+if (!Object.create) {
 Object.create = function (o) {
   if (arguments.length > 1) {
     throw new Error('Object.create implementation only accepts the first parameter.');
@@ -199,7 +199,7 @@ Object.create = function (o) {
 }
 }
 
-if (!Object.prototype.keys) {
+if (!Object.keys) {
 Object.keys = function (obj) {
   if (typeof obj !== 'object' && typeof obj !== 'function' || obj === null) {
     throw new TypeError('Object.keys called on non-object');

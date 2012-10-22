@@ -1,8 +1,8 @@
 var assert = require('assert');
 
-require('../lib/Array.filter.js')
+require('../lib/Array.prototype.filter.js')
 
-describe('Array.filter', function() {
+describe('Array.prototype.filter', function() {
   it('should filter elements', function() {
     var arr = [1, 2, 3, 4].filter(function(v) {
       return v > 2;

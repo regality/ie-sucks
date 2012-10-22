@@ -1,8 +1,8 @@
 var assert = require('assert');
 
-require('../lib/Array.every')
+require('../lib/Array.prototype.every')
 
-describe('Array.every', function() {
+describe('Array.prototype.every', function() {
   it('should test every element', function() {
     var arr = [1,2,3];
     var ok = arr.every(function(v) {

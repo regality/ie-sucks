@@ -1,8 +1,8 @@
 var assert = require('assert');
 
-require('../lib/Function.bind.js')
+require('../lib/Function.prototype.bind.js')
 
-describe('Function.bind', function() {
+describe('Function.prototype.bind', function() {
   it('should bind a function to a context', function() {
     var fn = function() {
       assert.equal(this, 7);

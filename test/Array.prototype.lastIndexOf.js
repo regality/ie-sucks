@@ -1,8 +1,8 @@
 var assert = require('assert');
 
-require('../lib/Array.lastIndexOf.js')
+require('../lib/Array.prototype.lastIndexOf.js')
 
-describe('Array.lastIndexOf', function() {
+describe('Array.prototype.lastIndexOf', function() {
   it('should find the last index', function() {
     var arr = [1, 2, 3, 4, 3];
     var index = arr.lastIndexOf(3);

@@ -1,8 +1,8 @@
 var assert = require('assert');
 
-require('../lib/Array.indexOf.js')
+require('../lib/Array.prototype.indexOf.js')
 
-describe('Array.indexOf', function() {
+describe('Array.prototype.indexOf', function() {
   it('should find the first index', function() {
     var arr = [1, 2, 3, 4, 3];
     var index = arr.indexOf(3);

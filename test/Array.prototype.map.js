@@ -1,8 +1,8 @@
 var assert = require('assert');
 
-require('../lib/Array.map.js')
+require('../lib/Array.prototype.map.js')
 
-describe('Array.map', function() {
+describe('Array.prototype.map', function() {
   it('should map values', function() {
     var arr = [1, 2, 3, 4];
     var arr2 = arr.map(function(v) {

@@ -76,7 +76,7 @@ Function.prototype.bind = function () {
 }
 }
 
-if (!Object.prototype.create) {
+if (!Object.create) {
 Object.create = function (o) {
   if (arguments.length > 1) {
     throw new Error('Object.create implementation only accepts the first parameter.');
@@ -87,7 +87,7 @@ Object.create = function (o) {
 }
 }
 
-if (!Object.prototype.keys) {
+if (!Object.keys) {
 Object.keys = function (obj) {
   if (typeof obj !== 'object' && typeof obj !== 'function' || obj === null) {
     throw new TypeError('Object.keys called on non-object');

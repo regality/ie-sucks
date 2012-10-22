@@ -1,8 +1,8 @@
 var assert = require('assert');
 
-require('../lib/Array.reduceRight.js')
+require('../lib/Array.prototype.reduceRight.js')
 
-describe('Array.reduceRight', function() {
+describe('Array.prototype.reduceRight', function() {
   it('should reduce values', function() {
     var arr = [1, 1, 1, 1];
     var sum = arr.reduceRight(function(a, b) { return a + b }, 0);
