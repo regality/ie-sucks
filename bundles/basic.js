@@ -105,3 +105,9 @@ Object.keys = function (obj) {
 }
 }
 
+if (!Date.now) {
+Date.now = function() {
+ return new Date().getTime();
+}
+}
+

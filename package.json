@@ -1,6 +1,6 @@
 {
   "name": "ie-sucks",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "add js functions that ie is missing",
   "main": "ie-sucks.js",
   "dependencies": {},

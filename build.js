@@ -7,7 +7,8 @@ var basic = [
   'Array.prototype.map.js',
   'Function.prototype.bind.js',
   'Object.create.js',
-  'Object.keys.js'
+  'Object.keys.js',
+  'Date.now.js'
 ];
 
 var all = [
@@ -22,7 +23,8 @@ var all = [
   'Array.prototype.some.js',
   'Function.prototype.bind.js',
   'Object.create.js',
-  'Object.keys.js'
+  'Object.keys.js',
+  'Date.now.js'
 ];
 
 if (argv.basic) {

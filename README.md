@@ -15,6 +15,7 @@ part of javascript. The functions implemented are:
     Function.bind
     Object.create
     Object.keys
+    Date.now
 
 To use, simply copy ie-sucks.js and add
 `<script src="ie-sucks.js"></script>` to your wobsite.
